@@ -1,14 +1,9 @@
 @charset "utf-8";
 
 @import url("reset.css");
-<<<<<<< HEAD
-=======
-/* @import url("fonts.css"); */
-@import url("main.css");
->>>>>>> 04f19f4c6c3f89d84c7ba1adc11f94e509857294
 @import url("style.css");
 /* @import url("fonts.css"); */
+
 @import url("main.css");
 @import url("join.css");
 @import url("login.css");
-@import url("book_search.css");
