@@ -2,7 +2,7 @@
 echo ==============================
 echo [PROCESSING...] git add --all .
 if [%1] EQU [] (
-echo [PROCESSING...] git commit -m "SpringLecture %date%"
+echo [PROCESSING...] git commit -m "dream %date%"
 ) else (
 echo [PROCESSING...] git commit -m %1
 )
@@ -13,7 +13,7 @@ echo [PROCESSING...] git add --all .
 git add --all .
 if [%1] EQU [] (
 echo.
-echo [PROCESSING...] git commit -m "SpringLecture %date%"
+echo [PROCESSING...] git commit -m "dream %date%"
 echo.
 git commit -m "SpringLecture %date%"
 ) else (
