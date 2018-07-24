@@ -25,6 +25,7 @@
          <div class="inner-1280">
             <div class="all_wrap">
               <section class="sec1 cf">
+
                 <article class="user">
                      <form action="" method="post">
                         <fieldset>
@@ -36,11 +37,87 @@
                            </p>
                         </fieldset>
                      </form>
+
+                     <dl class="user_info">
+                        <dt>이름</dt><dd class="user_name"></dd>
+                        <dt>연락처</dt><dd class="user_tel"></dd>
+                        <dt>주소</dt><dd class="user_arrd"></dd>
+                     </dl>
                 </article>
 
-                <article class="book"></article>
+                <article class="book">
+                   <form action="" method="post">
+                      <fieldset>
+                        <legend class="hide">도서정보</legend>
+                        <p>
+                           <label for="bookId">책ID</label>
+                           <input type="text" name="" value="" id="bookId"/>
+                           <input type="button" onclick="location='login.html'" name="" value="조회" id="checkBook">
+                        </p>
+                      </fieldset>
+                   </form>
+
+                   <dl class="book_info">
+                      <dt>서명</dt><dd class="book_name"></dd>
+                      <dt>저자</dt><dd class="book_author"></dd>
+                      <dt>출판일</dt><dd class="book_date"></dd>
+                      <dt>출판사</dt><dd class="book_pub"></dd>
+                   </dl>
+                </article>
               </section>
-              <section class="sec2"></section>
+
+              <section class="sec2">
+                 <div class="list_wrap">
+                <table class="col_name">
+                   <caption class='hide'>컬럼명</caption>
+                   <colgroup>
+                      <col width="10%" />
+                      <col width="10%" />
+                      <col width="40%" />
+                      <col width="15%" />
+                      <col width="15%" />
+                      <col width="*" />
+                   </colgroup>
+                   <thead>
+                      <tr>
+                         <th scope="col">대출번호</th>
+                         <th scope="col">책 ID</th>
+                         <th scope="col">서명</th>
+                         <th scope="col">대출일</th>
+                         <th scope="col">반납예정일</th>
+                         <th scope="col">상태</th>
+                      </tr>
+                   </thead>
+                </table>
+                <div class="rent_list_wrap">
+                <table class="rent_list">
+                   <caption class='hide'>대출목록</caption>
+                   <colgroup>
+                      <col width="10%" />
+                      <col width="10%" />
+                      <col width="40%" />
+                      <col width="15%" />
+                      <col width="15%" />
+                      <col width="*" />
+                   </colgroup>
+                   <tbody>
+                      <tr>
+                         <td class="rent_no">201807250001</td>
+                         <td class="book_id">0100000101</td>
+                         <td class="book_name">열 세번째 이야기</td>
+                         <td class="rent_date">2018-07-25</td>
+                         <td class="return_due_date">2018-08-21</td>
+                          <td class="rent_status">대출중</td>
+                      </tr>
+                   </tbody>
+                </table>
+                </div>
+                </div>
+
+                <div class="btn_wrap">
+                   <button class="add_btn">신규 등록</button>
+                </div>
+              </section>
             </div>
 
          </div>
